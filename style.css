@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Righteous&display=swap');
+
+:root {
+    --accent:#E34141;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display:grid;
+    grid-template-columns:300px 1fr;
+    font-family:'open sans', sans-serif;
+}
+
+aside {
+    background-color:#010101;
+    font-family:poppins, sans-serif;
+    color:white;
+    font-size:22px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+aside div {
+    font-family:righteous, sans-serif;
+    font-size:36px;
+    position:absolute;
+    top:50px;
+}
+
+aside div span {
+    color:var(--accent);
+}
+
+aside a {
+    text-decoration: none;
+    color:white;
+}
+
+
+
+aside li {
+    border-left:3px solid rgba(0,0,0,0);
+    padding-left:15px;
+    padding-right:15px;
+    list-style: none;
+    transform:translateX(-5px);
+    transition:box-shadow 0.4s ease-out;
+}
+
+/*Giving the current page an accent*/
+aside li:first-of-type {
+    border-color:var(--accent);
+}
+
+aside li:hover {
+    box-shadow:inset 6.5em 0 0 0 var(--accent);
+}
+
+aside ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.splash {
+    background-color: #0C0F11;
+    height:100vh;
+    color:white;
+    font-family:poppins, sans-serif;
+    font-size:32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0c0f11;
+}
+
+#changingText {
+    color:var(--accent);
+    font-size:70px;
+    height:111px;
+}
