@@ -1,5 +1,5 @@
 const splashText = document.querySelector("#changingText")
-const words = ["DEVELOPER", "STUDENT", "BIG TECHBOI", "GYM LEADER"]
+const words = ["DEVELOPER", "STUDENT"]
 let i = 0
 let j = 0
 let currPhrase = []
@@ -32,7 +32,7 @@ function writeSplash() {
       }
     }
   }
-  const time = (isEnd) ? 5000 : (isDeleting) ? 100 : 175
+  const time = (isEnd) ? 3000 : (isDeleting) ? 100 : 115
   setTimeout(writeSplash, time)
 }
 
