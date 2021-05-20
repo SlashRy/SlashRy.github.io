@@ -1,5 +1,5 @@
 const splashText = document.querySelector("#changing-text");
-const words = ["DEVELOPER", "STUDENT", "CREATOR"];
+const words = ["DEVELOPER", "LEARNER", "CREATOR"];
 let i = 0;
 let j = 0;
 let currWord = [];
