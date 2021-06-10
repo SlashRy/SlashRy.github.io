@@ -48,8 +48,6 @@ body {
     ;
 }
 
-
-
 #sidebar li {
     border-left:3px solid rgba(0,0,0,0);
     padding-left:15px;
@@ -116,6 +114,7 @@ main-container {
     height:111px;
     font-family:Koho, sans-serif;
     padding: 0px 6px;
+    line-height: 1.5;
     animation: typeFlash 0.8s infinite;
 }
 
