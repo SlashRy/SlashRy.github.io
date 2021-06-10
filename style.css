@@ -116,14 +116,16 @@ main-container {
     height:111px;
     font-family:Koho, sans-serif;
     padding: 0px 6px;
-    animation: typeFlash;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite
+    animation: typeFlash 0.8s infinite;
 }
 
 @keyframes typeFlash {
-    from {border-right:2px solid;}
-    to {border-right:2px solid transparent;;}
+    from, to {
+        border-right:2px solid var(--accent);
+      }
+      50% {
+        border-right:2px solid transparent;
+      }
   }
 
 
@@ -159,6 +161,7 @@ main-container {
 
 #projects .selected {
     background-color:var(--accent);
+    color:#f9f9f9;
 }
 
 #projects .selected:hover {
@@ -188,15 +191,32 @@ main-container {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    box-shadow: 0px 0px 10px 0px #123734;
+    box-shadow: 0px 0px 15px 0px #172d2b;
+    transition: transform 0.5s;
 }
 
-.project-card img {
+.project-card:hover {
+    transform:translateY(-3px);
+}
+
+.project-image, .project-card img {
     width:310px;
     height:200px;
     border-radius:35px;
-    object-fit:cover;
     background-color:var(--accent);
+}
+
+.project-card img {
+    object-fit:cover;
+    mix-blend-mode: hard-light;
+}
+
+.project-image:hover {
+    background-color:transparent;
+}
+
+.project-card img:hover {
+    mix-blend-mode:normal;
 }
 
 .project-name {
@@ -221,4 +241,9 @@ main-container {
     font-family: Poppins, sans-serif;
     text-decoration: none;
     font-size:16px;
+}
+
+.project-links a:hover {
+    color:#64cfc3;
+    
 }

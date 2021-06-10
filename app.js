@@ -37,3 +37,19 @@ function writeSplash() {
 }
 
 writeSplash();
+
+
+var filterBtns = document.querySelectorAll(".filter-container>button");
+
+for (button of filterBtns) {
+  button.addEventListener('click', setFilter)
+}
+
+console.log(filterBtns);
+
+function setFilter(e) {
+  for (button of filterBtns) {
+    button.classList.remove("selected");
+  }
+  e.currentTarget.classList.add("selected");
+}
