@@ -3,7 +3,6 @@
 :root {
     --accent:#25B3A3;
     --text:#D2EEEB;
-
 }
 
 * {
@@ -14,7 +13,7 @@
 
 body {
     font-family:'open sans', sans-serif;
-    background-color:black;
+    background-color:#16222D;
 }
 
 #sidebar {
@@ -85,6 +84,15 @@ nav {
 
 main {
     margin-left:225px;
+    
+}
+
+main-container {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:85%;
+    max-width:1400px;
 }
 
 .splash {
@@ -107,8 +115,110 @@ main {
     font-size:70px;
     height:111px;
     font-family:Koho, sans-serif;
+    padding: 0px 6px;
+    animation: typeFlash;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite
 }
 
-section {
-    min-height:500px; /*For testing, delete later*/
+@keyframes typeFlash {
+    from {border-right:2px solid;}
+    to {border-right:2px solid transparent;;}
+  }
+
+
+/********************************************************
+*                   PROJECTS SECTION                    *
+********************************************************/
+
+#projects {
+    background-color: #16222D;
+    color:var(--text);
+    display:flex;
+    justify-content: center;
+    margin:50px 0px;
+   
+}
+
+.filter-container {
+    display:flex;
+}
+
+#projects button {
+    font-family:Poppins, sans-serif;
+    font-size:14px;
+    color:var(--text);
+    background-color:#0B1116;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    padding:0px 10px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+#projects .selected {
+    background-color:var(--accent);
+}
+
+#projects .selected:hover {
+    outline:none;
+}
+
+#projects button:hover {
+    outline:solid 1px var(--accent);
+}
+
+.projects-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    gap:50px;
+    margin:50px 0px;
+}
+
+.project-card {
+    width:350px;
+    height:475px;
+    background-color:#0B1116;
+    border-radius:35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0px 0px 10px 0px #123734;
+}
+
+.project-card img {
+    width:310px;
+    height:200px;
+    border-radius:35px;
+    object-fit:cover;
+    background-color:var(--accent);
+}
+
+.project-name {
+    color:var(--accent);
+    font-family:Koho, sans-serif;
+    font-size:24px;
+}
+
+.project-card p:nth-of-type(2) {
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.project-links {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.project-links a {
+    color:var(--accent);
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    font-size:16px;
 }
