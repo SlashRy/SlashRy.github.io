@@ -1,3 +1,7 @@
+//*********************************************
+//*               SPLASHPAGE EFFECT           *
+//*********************************************
+
 const splashText = document.querySelector("#changing-text");
 const words = ["DEVELOPER", "LEARNER", "CREATOR"];
 let i = 0;
@@ -39,13 +43,16 @@ function writeSplash() {
 writeSplash();
 
 
+//*********************************************
+//*              PROJECT FILTERING            *
+//*********************************************
+
+
 var filterBtns = document.querySelectorAll(".filter-container>button");
 
 for (button of filterBtns) {
   button.addEventListener('click', setFilter)
 }
-
-console.log(filterBtns);
 
 function setFilter(e) {
   for (button of filterBtns) {
@@ -53,3 +60,51 @@ function setFilter(e) {
   }
   e.currentTarget.classList.add("selected");
 }
+
+
+//*********************************************
+//*                  GSAP                     *
+//*********************************************
+
+
+var sidebarLinks = document.querySelectorAll("#sidebar li");
+
+gsap.registerPlugin (ScrollTrigger);
+
+ScrollTrigger.create({
+  trigger: ".filter-container",
+  start: "top center",
+  onEnter: projectsActive,
+  onEnterBack: projectsActive
+});
+
+ScrollTrigger.create({
+  trigger: "#changing-text",
+  start: "top center",
+  onEnter: welcomeActive,
+  onEnterBack: welcomeActive
+});
+
+function welcomeActive() {
+  for (link of sidebarLinks) {
+    link.classList.remove("active");
+  }
+  sidebarLinks[0].classList.add("active");
+}
+
+function projectsActive() {
+  for (link of sidebarLinks) {
+    link.classList.remove("active");
+  }
+  sidebarLinks[1].classList.add("active");
+}
+
+gsap.to (".project-card", {
+  scrollTrigger: {
+    trigger: "#changing-text",
+    start: "top top"
+  },
+  opacity:1,
+  y: -20,
+  duration:0.7
+});
