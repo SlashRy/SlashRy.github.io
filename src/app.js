@@ -32,7 +32,7 @@ function writeSplash() {
       }
     }
   }
-  const time = isEnd ? 3000 : isDeleting ? 100 : 115;
+  const time = isEnd ? 3000 : isDeleting ? 80 : 115;
   setTimeout(writeSplash, time);
 }
 
