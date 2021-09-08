@@ -1,13 +1,17 @@
 TODO:
 
-Easy:
+Quick:
 - Connect footer links
 - Extra hover animation for project links
-- FA icons for project links
 
-Not as Easy
+Time Consuming:
 - Add more projects
 - GSAP for dynamically changing nav link colour
-- Project filtering
+- Mobile styles
+- Mobile nav menu
+- Check for better fonts
 - Alter name section of navbar (add Software Development Student?)
 - Light mode toggle?
+- Social links dropdown on navbar
+- Analytics?
+- Wave effect for call to action
