@@ -5,13 +5,16 @@ Quick:
 - Extra hover animation for project links
 
 Time Consuming:
-- Add more projects
+- Write-ups for projects
 - GSAP for dynamically changing nav link colour
-- Mobile styles
+- Improve mobile styles
 - Mobile nav menu
 - Check for better fonts
-- Alter name section of navbar (add Software Development Student?)
-- Light mode toggle?
 - Social links dropdown on navbar
-- Analytics?
+- Analytics
 - Wave effect for call to action
+
+Maybes:
+- Logo/Favicon beside left navbar section?
+- Light mode option?
+- Dice game easter egg

@@ -1,0 +1,31 @@
+@media only screen and (max-width: 800px) {
+    .project-card {
+        flex-direction: column;
+        height:auto;
+        width:85%;
+    }
+
+    .project-card img {
+        max-width:100%;
+        height:auto;
+    }
+
+    .project-description {
+        padding:20px 0px;
+    }
+
+    #projects-section {
+        gap:85px;
+        margin: 50px 0%;
+    }
+
+    #filter-section {
+        flex-direction: column;
+        gap:25px;
+    }
+
+    nav {
+        display:none;
+    }
+
+}
