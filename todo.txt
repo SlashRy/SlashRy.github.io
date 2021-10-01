@@ -3,6 +3,7 @@ TODO:
 Quick:
 - Connect footer links
 - Extra hover animation for project links
+- Change font on name within nav
 
 Time Consuming:
 - Write-ups for projects
