@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Hull | Portfolio</title>
-    <link rel="shortcut icon" type="image/jpg" href="src/images/favicon.png"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/mobile.css">
-</head>
-<body>
-    <nav>
-        <div id="nav-container">
-            <div id="nav-content-left">
-                <img src="src/images/logo.png" alt="logo">
-                <div>
-                    <p>Ryan Hull</p>
-                    <p>Developer</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan Hull | Portfolio</title>
+        <link
+            rel="shortcut icon"
+            type="image/jpg"
+            href="src/images/favicon.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/css/mobile.css" />
+    </head>
+    <body>
+        <nav>
+            <div id="nav-container">
+                <div id="nav-content-left">
+                    <img src="src/images/logo.png" alt="logo" />
+                    <div>
+                        <p>Ryan Hull</p>
+                        <p>Developer</p>
+                    </div>
+                </div>
+                <ul>
+                    <li id="mobile-menu-btn">
+                        <a><i class="fas fa-bars fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#splash"
+                            ><i class="fas fa-home fa-sm"></i
+                            >&nbsp&nbspWelcome</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#projects-anchor"
+                            ><i class="fas fa-tools fa-sm"></i
+                            >&nbsp&nbspProjects</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="splash">
+            <div>
+                <p>Hey, I'm Ryan</p>
+                <div id="changing-text-container">
+                    <p id="changing-text">Developer</p>
                 </div>
             </div>
-            <ul>
-                <li id="mobile-menu-btn"><a><i class="fas fa-bars fa-2x"></i></a></li>
-                <li><a href="#splash"><i class="fas fa-home fa-sm"></i>&nbsp&nbspWelcome</a></li>
-                <li><a href="#projects-anchor"><i class="fas fa-tools fa-sm"></i>&nbsp&nbspProjects</a></li>
-            </ul>
+            <a href="#projects-anchor"><button>Recent Work</button></a>
         </div>
-    </nav>
-    <div id="splash">
-        <div>
-            <p>Hey, I'm Ryan</p>
-            <div id="changing-text-container">
-                <p id="changing-text">Developer</p>
+        <div id="projects">
+            <div id="projects-anchor"></div>
+            <div id="projects-container">
+                <div id="filter-section">
+                    <p>Show Me:</p>
+                    <button id="recommended-btn" class="recommended filtering">
+                        Recommended
+                    </button>
+                    <button id="webApp-btn" class="app">Web Apps</button>
+                    <button id="landing-btn" class="landing">
+                        Landing Pages
+                    </button>
+                    <button id="games-btn" class="game">Games</button>
+                </div>
+                <div id="projects-section"></div>
             </div>
         </div>
-        <a href="#projects-anchor"><button>Recent Work</button></a>
-    </div>
-    <div id="projects">
-        <div id="projects-anchor"></div>
-        <div id="projects-container">
-            <div id="filter-section">
-                <p>Show Me:</p>
-                <button id="recommended-btn" class="recommended filtering">Recommended</button>
-                <button id="webApp-btn" class="app">Web Apps</button>
-                <button id="landing-btn" class="landing">Landing Pages</button>
-                <button id="games-btn" class="game">Games</button>
-            </div>
-            <div id="projects-section"></div>
-        </div>
-    </div>
-    <footer>
-        <a href="https://github.com/ryhull"><i class="fab fa-github-square fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ryhull/"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ryhull/"><i class="fas fa-dice-three fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ryhull/"><i class="fas fa-envelope-square fa-2x"></i></a>
-    </footer>
-    <script src="src/filtering.js"></script>
-    <script src="src/projects.js"></script>
-    <script src="src/render-projects.js"></script>
-    <script src="src/changing-text.js"></script>
-</body>
+        <footer>
+            <a href="https://github.com/ryhull"
+                ><i class="fab fa-github-square fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ryhull/"
+                ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ryhull/"
+                ><i class="fas fa-dice-three fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ryhull/"
+                ><i class="fas fa-envelope-square fa-2x"></i
+            ></a>
+        </footer>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+        <script src="src/filtering.js"></script>
+        <script src="src/projects.js"></script>
+        <script src="src/render-projects.js"></script>
+        <script src="src/changing-text.js"></script>
+    </body>
 </html>

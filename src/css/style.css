@@ -178,9 +178,9 @@ nav li a:hover {
     background-color: #272b2a;
     border: none;
     color: #b5b5b5;
-    padding: 4px 8px;
+    padding: 3px 12px;
     font-size: 15px;
-    border-radius: 13px;
+    border-radius: 12px;
     cursor: pointer;
     font-family: arial;
     white-space: nowrap;
@@ -193,7 +193,7 @@ nav li a:hover {
 #projects button.filtering {
     border: none;
     outline:none;
-    background: linear-gradient(var(--accent), #1e95c4);
+    background: linear-gradient(#24a899, #2a89ae);
     color: #fafffe;
 }
 
@@ -206,8 +206,8 @@ nav li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 75px;
-    margin: 75px 0%;
+    gap: 90px;
+    margin: 90px 0%;
 }
 
 .project-card {
@@ -262,8 +262,13 @@ nav li a:hover {
 }
 
 .card-content div a {
-    color:var(--accent);
     text-decoration: none;
+    text-decoration: none;
+    background-color: #1a9789;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 15px;
 }
 
 .card-content div a:hover {

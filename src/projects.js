@@ -5,7 +5,7 @@ const PROJECT_LIST = [
             "Single page app which allows users to input any supported Canadian city, and then quickly recieve a baseline decision on whether it would be better to purchase property in the city, or instead rent. It does this through scraping listings from a real estate site to return up to date estimates using the price-to-rent ratio. I designed and built the front-end of the app at Hack the North 2021.",
         tags: ["app", "recommended"],
         image: "src/images/sample.jpg",
-        demoLink: "https://price-to-rent.herokuapp.com/static/index.html",
+        demoLink: "https://price-to-rent.herokuapp.com",
         codeLink: "https://github.com/zhouj892/htn2021",
     },
 

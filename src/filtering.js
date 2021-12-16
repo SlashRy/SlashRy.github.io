@@ -16,10 +16,12 @@ for (btn of filterBtns)
     btn.addEventListener('click', filter)
 
 function filter(tag) {
+    $(".project-card").fadeOut(0);
     for (card of projectCards) {
         if (card.classList.contains(this.classList[0]))
             card.classList.add("visible")
         else
             card.classList.remove("visible")
     }
+    $(".project-card").fadeIn(750);
 }
