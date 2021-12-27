@@ -24,6 +24,10 @@
         gap:25px;
     }
 
+    #filter-section button, #filter-section button:first-of-type, #filter-section button:last-of-type {
+        border-radius:10px;
+    }
+
     nav {
         display:none;
     }

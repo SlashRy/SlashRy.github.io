@@ -167,27 +167,32 @@ nav li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1%;
-}
-
-#filter-section > p {
-    font-size: 18px;
 }
 
 #projects button {
     background-color: #272b2a;
     border: none;
     color: #b5b5b5;
-    padding: 3px 12px;
+    padding: 6px 15px;
     font-size: 15px;
-    border-radius: 12px;
     cursor: pointer;
     font-family: arial;
     white-space: nowrap;
+    transition:0.1s;
+}
+
+#filter-section button:first-of-type {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#filter-section button:last-of-type {
+    border-radius: 0px 10px 10px 0px;
 }
 
 #projects button:hover {
-    outline: solid 1px var(--accent);
+    background-color: #363c3a;
+    outline: solid 1px #1ec4b15c;
+    z-index: 10;
 }
 
 #projects button.filtering {
