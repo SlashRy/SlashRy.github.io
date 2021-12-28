@@ -170,34 +170,32 @@ nav li a:hover {
 }
 
 #projects button {
-    background-color: #272b2a;
-    border: none;
-    color: #b5b5b5;
+    background-color: #121a1891;;
+    border: solid 1px #1ec4b196;
+    color: #939393;
     padding: 6px 15px;
     font-size: 15px;
     cursor: pointer;
     font-family: arial;
     white-space: nowrap;
-    transition:0.1s;
+    transition:0.2s;
 }
 
 #filter-section button:first-of-type {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 9px 0px 0px 9px;
 }
 
 #filter-section button:last-of-type {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 9px 9px 0px;
 }
 
 #projects button:hover {
-    background-color: #363c3a;
-    outline: solid 1px #1ec4b15c;
-    z-index: 10;
+    background-color: #4040403b;
+    border-color: var(--accent);
+    color: #a4a4a4;
 }
 
 #projects button.filtering {
-    border: none;
-    outline:none;
     background: linear-gradient(#24a899, #2a89ae);
     color: #fafffe;
 }
