@@ -1,21 +1,15 @@
 TODO:
 
 Quick:
-- Connect footer links
-- Extra hover animation for project links
-- Change font on name within nav
+- Change font on name within nav?
 
 Time Consuming:
-- Write-ups for projects
-- GSAP for dynamically changing nav link colour
 - Improve mobile styles
-- Mobile nav menu
+- Mobile nav menu for social links
 - Check for better fonts
-- Social links dropdown on navbar
 - Analytics
 - Wave effect for call to action
 
 Maybes:
-- Logo/Favicon beside left navbar section?
 - Light mode option?
 - Dice game easter egg

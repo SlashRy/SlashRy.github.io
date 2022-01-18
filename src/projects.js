@@ -2,17 +2,17 @@ const PROJECT_LIST = [
     {
         name: "MyGiftCards",
         description:
-            "Full stack application utilizing Javascript, PHP, and MySQL. Allows registered users to easily add, update, and track their gift cards on the go instead of having to manually write and update values on the physical cards themselves.",
+            "Full stack application allowing registered users to easily add, update, sort, and track their gift cards on the fly instead of having to manually write and update values on the physical cards themselves. All passwords are hashed and salted, and session management is used to control access. I designed and built this using JavaScript, PHP, and MySQL to help with my terrible gift card hoarding problem. Began as part of an open-ended school project.",
         tags: ["app", "recommended"],
         image: "src/images/sample.jpg",
-        demoLink: "www.google.ca",
-        codeLink: "www.google.ca",
+        demoLink: "https://csunix.mohawkcollege.ca/~sa000847264/mygiftcards",
+        codeLink: "#",
     },
 
     {
         name: "Price : Rent",
         description:
-            "Single page app which allows users to input any supported Canadian city, and then quickly recieve a baseline decision on whether it would be better to purchase property in the city, or instead rent. It does this through scraping listings from a real estate site to return up to date estimates using the price-to-rent ratio. I designed and built the front-end of the app at Hack the North 2021.",
+            "Single page application which allows users to input any supported Canadian city, and then quickly receive a baseline decision on whether it would be better to purchase property in the city, or instead rent. It does this through scraping listings from a real estate site to return up to date estimates using the price-to-rent ratio. I designed and built the front end of the app in a team of three at Hack the North 2021.",
         tags: ["app", "recommended"],
         image: "src/images/sample.jpg",
         demoLink: "https://price-to-rent.herokuapp.com",
@@ -20,9 +20,9 @@ const PROJECT_LIST = [
     },
 
     {
-        name: "Hangman For The Film Fan",
+        name: "Hangman for the Film Fan",
         description:
-            "A hangman style game where a random movie quote is given, and the hidden word is its corresponding movie. The code tracks and saves the current and best winning streaks to localStorage, and additionally protects against repeating the same movie. Made using HTML, CSS, and vanilla JavaScript.",
+            "Game where a random movie quote is given, and the player must guess all letters of its corresponding movie without running out of lives. The code tracks and saves the current and best winning streaks using localStorage.",
         tags: ["game", "recommended"],
         image: "src/images/sample.jpg",
         demoLink: "https://ryhull.github.io/hangman-for-the-film-fan/",
@@ -32,7 +32,7 @@ const PROJECT_LIST = [
     {
         name: "Portfolio Site",
         description:
-            "Minimalist dark-themed portfolio designed by myself. Features a typewriter effect, and a section for displaying and filtering projects by category.",
+            "Minimalist dark-themed personal portfolio page designed by myself. Features a fully responsive design, a typewriter effect, and a section for dynamically displaying and filtering projects by category.",
         tags: ["recommended", "landing"],
         image: "src/images/sample.jpg",
         demoLink: "https://ryhull.github.io",
