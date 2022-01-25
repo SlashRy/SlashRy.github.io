@@ -268,10 +268,11 @@ nav li a:hover {
 
 .project-card img {
     height:100%;
-    border-radius:15px;
+    border-radius:8px;
     max-width: 28%;
     object-fit: cover;
     opacity:0.94;
+    outline: solid 2px #1a9789;
 }
 
 .card-content {
