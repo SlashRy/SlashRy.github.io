@@ -1,4 +1,7 @@
 @media only screen and (max-width: 800px) {
+    html {
+        scrollbar-width: thin;
+    }
 
     #projects-container {
         display: flex;
@@ -8,41 +11,42 @@
 
     .project-card {
         flex-direction: column;
-        height:auto;
-        width:85%;
+        height: auto;
+        width: 85%;
     }
 
     .project-card img {
-        max-width:100%;
-        height:auto;
+        max-width: 100%;
+        height: auto;
     }
 
     .project-description {
-        padding:20px 0px;
+        padding: 20px 0px;
     }
 
     #projects-section {
-        gap:85px;
+        gap: 85px;
         margin: 50px 0%;
     }
 
     #projects-anchor {
         transform: translateY(-50px);
-      }
+    }
 
     #filter-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 85%;
-        gap:35px;
+        gap: 35px;
     }
 
-    #filter-section button, #filter-section button:first-of-type, #filter-section button:last-of-type {
-        border-radius:10px;
+    #filter-section button,
+    #filter-section button:first-of-type,
+    #filter-section button:last-of-type {
+        border-radius: 10px;
     }
 
     nav {
-        display:none;
+        display: none;
     }
-
 }

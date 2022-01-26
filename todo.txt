@@ -1,11 +1,6 @@
 TODO:
 
-Quick:
-- Change font on name within nav?
-
-Time Consuming:
 - Improve mobile styles
-- Mobile nav menu for social links
 - Check for better fonts
 - Analytics
 - Wave effect for call to action

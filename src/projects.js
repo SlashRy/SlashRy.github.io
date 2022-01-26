@@ -14,7 +14,7 @@ const PROJECT_LIST = [
             "Prototype for a full stack application that would serve as a hub for beginner designers/developers to recruit each other and collaborate on projects. The current version allows users to search and filter through existing posts, or add one of their own. I developed this using JavaScript, PHP, and MySQL. This is a long-term project I plan on adding onto as I pick up further skills and experience!",
         tags: ["app", "recommended"],
         image: "src/images/rookruit.png",
-        demoLink: "https://ryhull.github.io/rookruit/",
+        demoLink: "https://csunix.mohawkcollege.ca/~sa000847264/rookruit",
         codeLink: "https://github.com/ryhull/rookruit",
     },
 
